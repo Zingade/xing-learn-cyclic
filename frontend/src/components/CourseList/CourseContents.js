@@ -1,0 +1,60 @@
+import KannadaSwarImage from '../../assets/images/kan-alphabet/Aplabets.jpg'
+import KannadaVyanjanImage from '../../assets/images/kan-alphabet/Vyanjanagalu.jpg'
+import KannadaKaGunitImage from '../../assets/images/kan-alphabet/Kagunita.jpg'
+
+export const courseIndex = [
+    {
+      subject:"Kannada",
+    },
+    {
+      subject:"Maths",
+    },
+  ]
+  export const KANNADA_SWAR = "kannadaswar"
+  export const KANNADA_VYANJANA = "Vyanjanagalu"
+  export const KANNADA_KAGUNITA = "Kagunita"
+  
+  export const courseList = [
+    {
+      category:{
+        subject:"Kannada",
+      },
+      image: KannadaSwarImage,
+      views:1234,
+      courseLink:KANNADA_SWAR,
+      courseDesc:"This course will show you Kannada Vowels (ಕನ್ನಡ ಸ್ವರಗಳು) with their sounds, writing way and example",
+      topic:"Kannada Vowels (ಕನ್ನಡ ಸ್ವರಗಳು)"
+    },
+    {
+      category:{
+        subject:"Kannada",
+      },
+      image: KannadaVyanjanImage,
+      views:1234,
+      courseLink:KANNADA_VYANJANA,
+      courseDesc:"This course will show you Kannada Consonants (ಕನ್ನಡ ವ್ಯಂಜನಗಳು) with their sounds, writing way and example",
+      topic:"Kannada Consonants (ಕನ್ನಡ ವ್ಯಂಜನಗಳು)"
+    },
+    {
+      category:{
+        subject:"Kannada",
+      },
+      image: KannadaKaGunitImage,
+      views:1234,
+      courseLink:KANNADA_KAGUNITA,
+      courseDesc:"This course will show you Kannada Kagunita (ಕನ್ನಡ ಕಾಗುಣಿತ) with their sounds and example",
+      topic:"Kannada Kagunita (ಕನ್ನಡ ಕಾಗುಣಿತ)"
+    },
+    {
+      category:{
+        subject:"Maths",
+    },
+    image:"https://elearning0706.cybersoft.edu.vn/hinhanh/advanced-react-and-redux-2018-edition.png",
+    views:3456,
+    courseLink:"tbd-002",
+    courseDesc:"This course guides you for the beginner to add two digit numbers",
+    topic:"Maths - Addition of two digit numbers"
+  },
+]
+  
+  
