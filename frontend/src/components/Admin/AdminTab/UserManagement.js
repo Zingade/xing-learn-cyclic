@@ -102,7 +102,7 @@ function UserManagement(props) {
         if(validate()){
             let currentYear = new Date().getFullYear();
             const currentMonth = new Date().getMonth();
-            if ( currentMonth < 3 ) {
+            if ( currentMonth <= 3 ) {
                 currentYear--;
             }
             dispatch(saveUser({_id:values.id, name:values.userName, loginID:values.loginID, email:values.email, password:values.password, phone:values.phone, year:currentYear}));

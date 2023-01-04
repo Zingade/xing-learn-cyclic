@@ -221,8 +221,12 @@ function StudCard(props) {
   };
 
   const onClickHandle = (e) => {
-
-    const currentYear = new Date().getFullYear();
+    
+    let currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth();
+    if ( currentMonth <= 3 ) {
+      currentYear--;
+    }
     if ( currentYear === parseInt(student.year) ) {
       values.name = student.name
       values.monthDisplay = "this month"
@@ -231,15 +235,15 @@ function StudCard(props) {
         values.amount = currentMonthFees.amount
         values.lastMMonth = false
         setOpen(true)
-        }
+      }
       if  (e.currentTarget.id === LAST_MONTH_AMOUNT_VALUE ){
         values.monthDisplay = "last month"
         values.payMethod = lastMonthFees.payMethod
         values.amount = lastMonthFees.amount
         values.lastMMonth = true
         setOpen(true)
-        }
       }
+    }
   }
 
   return (

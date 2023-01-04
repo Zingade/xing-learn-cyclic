@@ -21,9 +21,9 @@ const BatchCell = (props) => {
     const year = subString.substring(startIndex, endIndex);
     const currentYear = new Date().getFullYear();
     
-    if (parseInt(year) !== currentYear){
+    /*if (parseInt(year) !== currentYear){
       return -1;
-    }
+    }*/
 
     subString = subString.substring(subString.indexOf('@')+1)
 
