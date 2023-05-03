@@ -31,7 +31,7 @@ const SortYear = (props) => {
       return (
         <>
         <Grid container spacing={1} className={classes.controlContainer}>
-            <Typography>Sort Year : </Typography>
+            <Typography>Sort Year: </Typography>
             <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
             <Select
                 labelId="demo-year-select-standard-label"
@@ -43,6 +43,7 @@ const SortYear = (props) => {
                 >
                 <MenuItem value={'2021'}>2021</MenuItem>
                 <MenuItem value={'2022'}>2022</MenuItem>
+                <MenuItem value={'2023'}>2023</MenuItem>
             </Select>
             </FormControl>
         </Grid>
