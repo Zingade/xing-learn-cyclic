@@ -176,5 +176,5 @@ export const LAST_MONTH_AMOUNT_VALUE = "2";
 export const TOTAL_AMOUNT_VALUE = "3";
 export const BATCH_BUMBER_VALUE = "4";
 export var currentSortYear = {
-  value:'2024',
+  value:'2025',
 };
